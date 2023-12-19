@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AirPods Pop-up</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .popup-container {
+      position: relative;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .airpods-image {
+      max-width: 100%;
+      height: auto;
+      display: block; /* To center properly with margin auto */
+      margin: auto;
+    }
+
+    .green-light::before {
+      content: '';
+      position: absolute;
+      top: 55%;
+      left: 49%;
+      transform: translate(-50%, -50%);
+      width:  6px;
+      height: 6px;
+      background-color: #00ff00; /* Green color */
+      border-radius: 50%;
+      box-shadow: 0 0 8px rgba(0, 255, 0, 0.8); /* Optional: add a subtle shadow */
+    }
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="popup-container">
+    <h2>AirPods</h2>
+    <div class="green-light"></div>
+    <img class="airpods-image" src="air.png" alt="AirPods">
+    <p>Connect to Adebisi's Airpods</p>
+    <button>Connect</button>
+  </div>
+</body>
+</html>
