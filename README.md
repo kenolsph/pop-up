@@ -1,1 +1,1 @@
-apple ai
+apple airpod
